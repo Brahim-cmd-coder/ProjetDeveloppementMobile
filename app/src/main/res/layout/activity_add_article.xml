@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEDED"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SimpleBlog"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+    <TextView
+
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_margin="17dp"
+        android:layout_marginTop="1dp"
+        android:padding="1dp"
+        android:paddingLeft="2dp"
+        android:text="Ajouter un article"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Vues pour le formulaire d'ajout d'article -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de l'article"
+
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Contenu de l'article"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="140dp"
+        android:layout_marginTop="1dp"
+        android:padding="1dp"
+        android:paddingLeft="20dp"
+        android:text="Ajouter" />
+
+</LinearLayout>
